@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 import App from "../App";
 import Home from "../components/home/Home";
 import Movie from "../components/home/sections/individualMovie/Movie";
@@ -10,7 +10,7 @@ import IndividualTvGenre from "../components/home/sections/tvShowsByGenres/Indiv
 import TvGenreSection from "../components/home/sections/tvShowsByGenres/TvGenreSection";
 import CollectionOverview from "../components/home/sections/collection/Collection";
 import NotFoundPage from "../components/home/NotFoundPage";
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/tmdb",
     element: <App />,
