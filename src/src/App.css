@@ -1,0 +1,131 @@
+.poster::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(8, 8, 24);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 8, 24, 1) 1%,
+    rgba(9, 9, 28, 0.8463585263206845) 21%,
+    rgba(11, 11, 33, 0.6558823358444941) 47%,
+    rgba(19, 19, 52, 0.4065826159565389) 69%
+  );
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.posterimgcontainer:hover .posterimg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  -webkit-transition: background 10s;
+  -moz-transition: background 10s;
+  -ms-transition: background 10s;
+  -o-transition: background 10s;
+}
+
+.details_backdrop {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 17, 17, 0.6);
+
+  -webkit-transition: background 10s;
+  -moz-transition: background 10s;
+  -ms-transition: background 10s;
+  -o-transition: background 10s;
+}
+.tooltiptext {
+  visibility: hidden;
+
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 120%;
+  left: 50%;
+
+  z-index: 1;
+}
+.tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #164e63 transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.mobile_backdrop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgb(8, 8, 24);
+  background: linear-gradient(
+    0deg,
+    rgba(8, 8, 24, 1) 1%,
+    rgba(9, 9, 28, 0.8463585263206845) 21%,
+    rgba(11, 11, 33, 0.6558823358444941) 47%,
+    rgba(19, 19, 52, 0.4065826159565389) 69%
+  );
+}
+
+.imgposter {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.genres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.genres .swiper-scrollbar {
+  background: rgb(29, 179, 216);
+
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  top: 103%;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+}
+/* .cards .swiper-button-next,
+.cards .swiper-button-prev {
+  color: white;
+} */
+.similar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(153px, 1fr));
+}
+.search {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
