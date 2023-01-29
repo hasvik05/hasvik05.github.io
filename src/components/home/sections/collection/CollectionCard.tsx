@@ -11,7 +11,7 @@ const CollectionCard = ({ movie }: Props) => {
       <div className="flex w-full overflow-clip h-[140px] bg-slate-800  rounded-lg items-center hover:bg-black/30 cursor-pointer">
         <img
           alt="card"
-          className="object-cover saturate-[1.3] w-[93.33] h-full text-[#080818] "
+          className="object-cover saturate-[1.3] max-w-[93.33px] h-full text-[#080818] "
           src={
             movie.poster_path
               ? `https://image.tmdb.org/t/p/original/${movie.poster_path}`
