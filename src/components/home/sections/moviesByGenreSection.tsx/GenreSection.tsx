@@ -1,7 +1,7 @@
 import MoviesByGenre from "./MoviesByGenre";
 import { useMovieStore } from "../../../../store/store";
 import { Spinner } from "@chakra-ui/react";
-import LatestMovieOverview from "./LatestMovieOverview";
+
 import { useState } from "react";
 
 const GenreSection = () => {
@@ -10,8 +10,6 @@ const GenreSection = () => {
   return (
     <div className="p-6 flex flex-col gap-8 w-full">
       <div className="text-5xl text-teal-500 font-semibold ">Movies</div>
-
-      <LatestMovieOverview />
 
       {genres.length > 0 ? (
         <div className={`flex flex-col gap-16 min-h-screen mb-4`}>
